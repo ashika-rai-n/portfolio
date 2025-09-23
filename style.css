@@ -1,0 +1,166 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f9f9fb;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.main-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.main-nav li {
+  margin-left: 20px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #007bff;
+}
+
+/* Sections */
+.content-section {
+  padding: 70px 0;
+}
+
+.section-box {
+  background: #fff;
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.04);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0056b3;
+  border-left: 5px solid #007bff;
+  padding-left: 12px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin: 20px 0 10px;
+  color: #333;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* Resume / Skills */
+.resume-block {
+  border-left: 4px solid #007bff;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.skills-list li {
+  list-style: none;
+  background: #eef5ff;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+}
+
+/* Projects */
+.project-item {
+  margin-bottom: 30px;
+}
+
+.project-info {
+  background: #fafafa;
+  border: 1px solid #eaeaea;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Contact */
+.contact-info-block {
+  background: #fdfdfd;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.contact-info-block a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info-block a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.main-footer {
+  background: #ffffff;
+  color: #555;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-header .container {
+    flex-direction: column;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .main-nav li {
+    margin: 10px 0;
+  }
+}
